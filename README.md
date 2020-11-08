@@ -12,6 +12,7 @@ Develop React e-commerce project with:
 TODO:
 - remove Redux 
 - remove Redux persist
+- remove Reselect
 - add useContext
 
 E-commerce project DEMO:
