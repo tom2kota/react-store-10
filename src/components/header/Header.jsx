@@ -1,13 +1,16 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import {UserContext} from "../../contexts/user/userContext";
 import {HeaderContainer, LogoContainer, OptionsContainer, OptionsLink} from './headerStyles';
 import {auth} from '../../firebase/firebase.utils';
-import CartIcon from "../cart-icon/CartIcon";
+import {CartIcon} from "../cart-icon/CartIcon";
 import CartDropdown from "../cart-dropdown/CartDropdown";
 import imgLogo from '../../images/logo192.png'
+import {CartContext} from "../../contexts/cart/cartContext";
 
-export const Header = ({hidden}) => {
+export const Header = () => {
     const currentUser = useContext(UserContext)
+    const [hidden, setHidden] = useState(true)
+    const toggleHidden = () => setHidden(!hidden)
 
     return (
         <HeaderContainer>
@@ -34,7 +37,9 @@ export const Header = ({hidden}) => {
                         Sign Out
                     </OptionsLink>
                 }
-                <CartIcon/>
+                <CartContext.Provider value={{hidden, toggleHidden}}>
+                    <CartIcon/>
+                </CartContext.Provider>
             </OptionsContainer>
             {hidden ? null : <CartDropdown/>}
         </HeaderContainer>
