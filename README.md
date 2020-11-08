@@ -1,7 +1,21 @@
 # React Store App (React: 16.14.0)
+#### Repo cloned from [react-store-05](https://github.com/tom2kota/react-store-05)
+Develop React e-commerce project with:
+- Stripe payment (test mode)
+- Firebase Authentication 
+- User Data storage in Cloud Firestore 
+- Reselect library 
+- Redux 
+- Redux persist
+- Formcarry contact form
+
+TODO:
+- remove Redux 
+- remove Redux persist
+- add useContext
 
 E-commerce project DEMO:
-- [Client](https://react-store-05.vercel.app)
+- [Client](https://react-store-10.vercel.app)
 - [Server](https://react-store-express-server.herokuapp.com) or [Clone repo & run server on localhost](https://github.com/tom2kota/react-store-server)
 - [Stripe Dashboard](https://dashboard.stripe.com/test/dashboard)
 - [Firebase](https://console.firebase.google.com)
