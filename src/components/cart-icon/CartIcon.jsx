@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import {ReactComponent as ShoppingIcon} from "../../images/shopping-bag.svg";
-import {CartContext} from "../../contexts/cart/cartContext";
+import {CartContext} from "../../providers/cart/cartProvider";
 import './CartIcon.scss';
 
 export const CartIcon = ({itemCount}) => {
