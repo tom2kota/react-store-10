@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import CollectionItem from "../../components/collection-item/CollectionItem";
+import {CollectionItem} from "../../components/collection-item/CollectionItem";
 import {ShopDataContext} from "../../contexts/shop/shopContext";
 import './CollectionPage.scss'
 

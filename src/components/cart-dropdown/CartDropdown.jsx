@@ -3,8 +3,8 @@ import {CustomButton} from "../custom-button/CustomButton";
 import {CartItem} from "../cart-item/CartItem";
 import {withRouter} from "react-router-dom";
 import {toggleCartHidden} from "../../redux/cart/cartActions";
-import './CartDropdown.scss'
 import {CartContext} from "../../providers/cart/cartProvider";
+import './CartDropdown.scss'
 
 const CartDropdown = ({history, dispatch}) => {
     const {cartItems} = useContext(CartContext)
