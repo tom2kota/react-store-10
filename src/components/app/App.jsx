@@ -5,8 +5,8 @@ import {ShopPage} from "../../pages/shop/ShopPage";
 import {Header} from "../header/Header";
 import {SignInUp} from "../../pages/sign-in-up/SignInUp";
 import {ContactPage} from "../../pages/contact/ContactPage";
+import {CheckoutPage} from "../../pages/checkout/CheckoutPage";
 import {auth, createUserProfileDocument} from "../../firebase/firebase.utils";
-import CheckoutPage from "../../pages/checkout/CheckoutPage";
 import {UserContext} from "../../contexts/user/userContext";
 
 export class App extends Component {
