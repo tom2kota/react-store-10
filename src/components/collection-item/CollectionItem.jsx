@@ -6,6 +6,7 @@ import './CollectionItem.scss'
 export const CollectionItem = ({item}) => {
     const {name, price, image} = item
     const {addItem} = useContext(CartContext)
+
     return (
         <div className='collection-item'>
             <div className='image' style={{backgroundImage: `url(${image})`}}/>
@@ -13,7 +14,7 @@ export const CollectionItem = ({item}) => {
                 <span className='name'>{name}</span>
                 <span className='price'>${price}</span>
             </div>
-            <CustomButton onClick={() => addItem(item)}>Add 2 Cart</CustomButton>
+            <CustomButton onClick={() => addItem(item)} inverted>Add 2 Cart</CustomButton>
         </div>
     )
 }

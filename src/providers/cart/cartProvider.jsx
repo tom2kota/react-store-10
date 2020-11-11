@@ -1,7 +1,6 @@
 import React, {createContext, useState, useEffect} from "react";
 import {addItemToCart, filterItemFromCart, getCartItemsCount, removeItemFromCart} from "./cartUtils";
 
-
 export const CartContext = createContext({
     hidden: true,
     toggleHidden: () => {
